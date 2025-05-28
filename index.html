@@ -4,92 +4,118 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>إدراك الزمن - Time Decoded</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <style>
     body {
       margin: 0;
+      padding: 0;
       font-family: 'Arial', sans-serif;
-      color: #fff;
-      background: url('galaxy-hourglass.png') no-repeat center center fixed;
+      background-image: url('sand-timeline.png');
       background-size: cover;
-      backdrop-filter: brightness(0.6);
+      background-position: center;
+      background-attachment: fixed;
+      color: white;
     }
 
     nav {
+      background-color: rgba(0, 0, 0, 0.9);
       display: flex;
       justify-content: space-between;
       align-items: center;
       padding: 1rem 2rem;
-      background-color: rgba(0, 0, 0, 0.5);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
     }
 
-    nav h1 {
-      margin: 0;
+    nav .logo {
       font-size: 1.5rem;
-      color: #00d9ff;
+      font-weight: bold;
+      color: #ffc107;
     }
 
-    nav .socials a {
-      margin-left: 15px;
-      color: #fff;
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li a {
+      color: white;
       text-decoration: none;
-      font-size: 1.2rem;
+      font-weight: bold;
     }
 
-    .container {
-      max-width: 900px;
-      margin: 5rem auto;
-      padding: 2rem;
-      background-color: rgba(0, 0, 0, 0.6);
-      border-radius: 15px;
-    }
-
-    h2 {
+    .hero {
       text-align: center;
-      font-size: 2rem;
-      margin-bottom: 1.5rem;
-      color: #00d9ff;
+      padding: 10vh 2rem;
+      background-color: #000000e6; /* خلفية داكنة غير شفافة */
+      max-width: 800px;
+      margin: auto;
+      border-radius: 12px;
+      box-shadow: 0 0 30px rgba(0,0,0,0.7);
     }
 
-    p {
-      font-size: 1.1rem;
+    .hero h1 {
+      font-size: 2.5rem;
+      color: #ffc107;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
       line-height: 1.8;
+      margin-top: 1rem;
     }
 
-    .socials img {
-      vertical-align: middle;
-      width: 24px;
-      height: 24px;
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: rgba(0, 0, 0, 0.9);
+      color: white;
+      font-size: 0.9rem;
+    }
+
+    .social-icons a {
+      color: white;
+      margin: 0 0.5rem;
+      font-size: 1.4rem;
+      text-decoration: none;
+    }
+
+    .social-icons a:hover {
+      color: #ffc107;
     }
   </style>
 </head>
 <body>
+
   <nav>
-    <h1>🧭 إدراك الزمن</h1>
-    <div class="socials">
-      <a href="mailto:arsinamirlopin@gmail.com" title="Gmail">
-        <img src="https://img.icons8.com/fluency/48/gmail.png" alt="gmail" />
-      </a>
-      <a href="https://facebook.com/amir%20essahbi" title="Facebook" target="_blank">
-        <img src="https://img.icons8.com/fluency/48/facebook-new.png" alt="facebook" />
-      </a>
-      <a href="https://x.com/Amir%20essahbi" title="X (Twitter)" target="_blank">
-        <img src="https://img.icons8.com/ios-filled/50/ffffff/twitterx.png" alt="x" />
-      </a>
-    </div>
+    <div class="logo">Time Decoded</div>
+    <ul>
+      <li><a href="index.html">الرئيسية</a></li>
+      <li><a href="asl-aldeen.html">أصل الدين</a></li>
+      <li class="social-icons">
+        <a href="mailto:arsinamirlopin@gmail.com" title="Gmail"><i class="fas fa-envelope"></i></a>
+        <a href="https://facebook.com/amir%20essahbi" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+        <a href="https://x.com/Amir%20essahbi" target="_blank" title="Twitter / X"><i class="fab fa-x-twitter"></i></a>
+      </li>
+    </ul>
   </nav>
 
-  <div class="container">
-    <h2>ما هو إدراك الزمن؟</h2>
+  <section class="hero">
+    <h1>إدراك الزمن</h1>
     <p>
-      إدراك الزمن هو مفهوم معقد يتداخل بين الفلسفة والعلوم، حيث يعبر عن كيفية فهم الإنسان لتتابع الأحداث، واستيعابه للماضي والحاضر والمستقبل.
-      في هذا الموقع نعرض أفكارًا متقدمة عن الزمن، من ضمنها نظريات السفر عبر الزمن وأثر الزمن على الدين والمجتمعات.
+      هل الزمن مجرّد مرورٍ للأحداث؟ أم أنه كيانٌ معقّدٌ نتفاعل معه ونعيد تشكيله؟  
+      عبر هذه النافذة، نعيد النظر في طبيعة الزمن، ونستكشف كيف كان الإنسان في سعي دائم لفهم موقعه بين الماضي والمستقبل.
+      ما هو الإله؟ ومتى نشأ؟ هل نحن صانعوه في مخيلتنا؟ أم أن له جذور تتجاوز حدود وعينا؟
     </p>
-    <p>
-      من خلال استكشاف البعد الرابع، نحاول تفكيك المفاهيم التقليدية وإعادة بناء تصورات جديدة قد تفتح آفاقًا لفهم أعمق لحقيقة الزمن.
-    </p>
-    <p>
-      هل الزمن شيء نعيشه؟ أم هو وهم صنعناه لنفهم التسلسل؟ في هذا الفضاء، نفتح النقاش... ونفكك الزمن.
-    </p>
-  </div>
+  </section>
+
+  <footer>
+    © 2025 Time Decoded – جميع الحقوق محفوظة
+  </footer>
+
 </body>
 </html>
