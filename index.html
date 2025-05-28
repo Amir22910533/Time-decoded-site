@@ -1,51 +1,85 @@
-<!DOCTYPE html><html lang="ar" dir="rtl">
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Time Decoded</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>إدراك الزمن</title>
   <style>
     body {
       margin: 0;
-      padding: 0;
       font-family: 'Arial', sans-serif;
       color: white;
-      background-image: url('galaxy-hourglass.png');
+      background: url('degrading-faith.png') no-repeat center center fixed;
       background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      height: 100vh;
-      position: relative;
     }
-    h1 {
+
+    .overlay {
+      padding: 2rem;
       text-align: center;
-      padding-top: 50px;
-      font-size: 3rem;
     }
-    .nav-bar {
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+      max-width: 800px;
+      margin: 0 auto 2rem;
+    }
+
+    .nav {
+      position: fixed;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: rgba(0, 0, 0, 0.5);
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      font-size: 1rem;
+    }
+
+    .nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    .social-icons {
       position: absolute;
       bottom: 20px;
       right: 20px;
-      font-size: 1.2rem;
     }
-    .social-links {
-      position: absolute;
-      bottom: 20px;
-      left: 20px;
-      font-size: 1.5rem;
-    }
-    .social-links a {
+
+    .social-icons a {
       margin-left: 10px;
-      text-decoration: none;
+    }
+
+    .social-icons img {
+      width: 30px;
+      height: 30px;
+      vertical-align: middle;
     }
   </style>
 </head>
 <body>
-  <h1>فك شفرة الزمن</h1>  <div class="nav-bar">
-    <a href="./asl-aldeen.html" style="color: white; text-decoration: none;">1</a>
-  </div>  <div class="social-links">
-    <a href="mailto:arsinamirlopin@gmail.com" target="_blank" title="البريد الإلكتروني">📧</a>
-    <a href="https://www.facebook.com/amir.essahbi" target="_blank" title="فيسبوك">📘</a>
-    <a href="https://twitter.com/Amir_essahbi" target="_blank" title="تويتر/X">🐦</a>
+  <div class="overlay">
+    <h1>إدراك الزمن</h1>
+    <p>
+      محاولة لفهم كيف يؤثر إدراك الزمن في وعينا وسلوكنا، واستكشاف فرضيات فلسفية وعلمية حول الزمان والمكان والبشر والله.
+    </p>
+  </div>
+
+  <div class="nav">
+    <a href="index.html">١</a>
+    <a href="asl-aldeen.html">٢</a>
+  </div>
+
+  <div class="social-icons">
+    <a href="mailto:arsinamirlopin@gmail.com" title="Gmail"><img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Gmail"></a>
+    <a href="https://www.facebook.com/Amir%20essahbi" title="Facebook"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook"></a>
+    <a href="https://x.com/Amir%20essahbi" title="X"><img src="https://cdn-icons-png.flaticon.com/512/5968/5968958.png" alt="X"></a>
   </div>
 </body>
 </html>
