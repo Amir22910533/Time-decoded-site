@@ -4,118 +4,94 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>إدراك الزمن - Time Decoded</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <style>
     body {
       margin: 0;
-      padding: 0;
       font-family: 'Arial', sans-serif;
-      background-image: url('sand-timeline.png');
+      color: white;
+      background: url('main-bg.png') no-repeat center center fixed;
       background-size: cover;
-      background-position: center;
-      background-attachment: fixed;
-      color: white;
+      height: 100vh;
+      position: relative;
     }
 
-    nav {
-      background-color: rgba(0, 0, 0, 0.9);
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 1rem 2rem;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
-
-    nav .logo {
-      font-size: 1.5rem;
-      font-weight: bold;
-      color: #ffc107;
-    }
-
-    nav ul {
-      list-style: none;
-      display: flex;
-      gap: 1.5rem;
-      margin: 0;
-      padding: 0;
-    }
-
-    nav ul li a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    .hero {
-      text-align: center;
-      padding: 10vh 2rem;
-      background-color: #000000e6; /* خلفية داكنة غير شفافة */
-      max-width: 800px;
-      margin: auto;
-      border-radius: 12px;
-      box-shadow: 0 0 30px rgba(0,0,0,0.7);
-    }
-
-    .hero h1 {
-      font-size: 2.5rem;
-      color: #ffc107;
-    }
-
-    .hero p {
-      font-size: 1.2rem;
-      line-height: 1.8;
-      margin-top: 1rem;
-    }
-
-    footer {
+    .overlay-text {
+      position: absolute;
+      top: 20%;
+      width: 100%;
       text-align: center;
       padding: 1rem;
-      background-color: rgba(0, 0, 0, 0.9);
-      color: white;
-      font-size: 0.9rem;
+      font-size: 2rem;
+      background-color: rgba(0, 0, 0, 0.0); /* لا توجد طبقة */
     }
 
-    .social-icons a {
+    .nav {
+      position: absolute;
+      bottom: 20px;
+      width: 100%;
+      text-align: center;
+      font-size: 1.2rem;
       color: white;
-      margin: 0 0.5rem;
-      font-size: 1.4rem;
+    }
+
+    .nav a {
+      color: white;
       text-decoration: none;
+      margin: 0 10px;
+      font-weight: bold;
     }
 
-    .social-icons a:hover {
-      color: #ffc107;
+    .social-links {
+      position: absolute;
+      bottom: 10%;
+      left: 5%;
+      width: 20%;
+      height: 10%;
+    }
+
+    .social-links a {
+      position: absolute;
+      display: block;
+    }
+
+    /* افتراضات أماكن اللوغوهات داخل الصورة */
+    .facebook {
+      top: 0;
+      left: 0;
+      width: 30%;
+      height: 100%;
+    }
+
+    .twitter {
+      top: 0;
+      left: 35%;
+      width: 30%;
+      height: 100%;
+    }
+
+    .email {
+      top: 0;
+      left: 70%;
+      width: 30%;
+      height: 100%;
     }
   </style>
 </head>
 <body>
-
-  <nav>
-    <div class="logo">Time Decoded</div>
-    <ul>
-      <li><a href="index.html">الرئيسية</a></li>
-      <li><a href="asl-aldeen.html">أصل الدين</a></li>
-      <li class="social-icons">
-        <a href="mailto:arsinamirlopin@gmail.com" title="Gmail"><i class="fas fa-envelope"></i></a>
-        <a href="https://facebook.com/amir%20essahbi" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
-        <a href="https://x.com/Amir%20essahbi" target="_blank" title="Twitter / X"><i class="fab fa-x-twitter"></i></a>
-      </li>
-    </ul>
-  </nav>
-
-  <section class="hero">
+  <div class="overlay-text">
     <h1>إدراك الزمن</h1>
-    <p>
-      هل الزمن مجرّد مرورٍ للأحداث؟ أم أنه كيانٌ معقّدٌ نتفاعل معه ونعيد تشكيله؟  
-      عبر هذه النافذة، نعيد النظر في طبيعة الزمن، ونستكشف كيف كان الإنسان في سعي دائم لفهم موقعه بين الماضي والمستقبل.
-      ما هو الإله؟ ومتى نشأ؟ هل نحن صانعوه في مخيلتنا؟ أم أن له جذور تتجاوز حدود وعينا؟
-    </p>
-  </section>
+    <p>رحلة في البعد الرابع لفهم حقيقة الزمن وتشكّل الوعي البشري.</p>
+  </div>
 
-  <footer>
-    © 2025 Time Decoded – جميع الحقوق محفوظة
-  </footer>
+  <div class="nav">
+    <a href="index.html">1</a>
+    <a href="asl-aldeen.html">2</a>
+  </div>
 
+  <div class="social-links">
+    <a class="facebook" href="https://facebook.com/amir essahbi" target="_blank" title="Facebook"></a>
+    <a class="twitter" href="https://x.com/Amir%20essahbi" target="_blank" title="Twitter / X"></a>
+    <a class="email" href="mailto:arsinamirlopin@gmail.com" title="Email"></a>
+  </div>
 </body>
 </html>
